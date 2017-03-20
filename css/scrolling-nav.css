@@ -47,6 +47,9 @@ section .page-scroll {
     position: relative;
     margin-top: -100px;
     top: 100%;
+    font-size: 3em;
+    color: white;
+    text-decoration: none;	
 }
 
 section .container {
