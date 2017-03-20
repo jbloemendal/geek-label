@@ -28,6 +28,7 @@ section {
     padding-top: 50px;
     text-align: center;
     position: static;
+    font-family: 'Margot';
 }
 
 section.red {
@@ -35,7 +36,7 @@ section.red {
 }
 
 section.white {
-    background: #eee;
+    background: #ffffff;
 }
 
 section.grey {
@@ -52,9 +53,109 @@ section .page-scroll {
     text-decoration: none;	
 }
 
+section.grey .page-scroll span {
+    color: #d83454;
+}
+
+section.white .page-scroll span {
+    color: black;
+}
+
 section .container {
     position: relative;
     top: 50%;
     width: 100%;
     margin-top: -50px;
+}
+
+/* Intro */
+section#intro img {
+    width: 260px;
+}
+section#intro p {
+    font-size: 1.2em;
+    color: white;
+    margin-top: 85px;
+}
+
+/* Love Design */
+section#loveDesign img {
+    width: 400px;
+    position: relative;
+    top: -150px;
+}
+section#loveDesign p {
+    font-size: 1.2em;
+    color: black;
+    margin-top: 0px;
+}
+
+/* Do Design */
+section#doDesign img {
+    width: 400px;
+    position: relative;
+    top: -150px;
+}
+section#doDesign p {
+    font-size: 1.2em;
+    color: black;
+    margin-top: 0px;
+}
+
+/* We Love Both */
+section#loveBoth img {
+    width: 400px;
+    position: relative;
+    top: -150px;
+}
+section#loveBoth p {
+    font-size: 1.2em;
+    color: black;
+    margin-top: 0px;
+}
+
+/* Services */
+section#services h1 {
+    font-size: 3em;
+    color: black;
+    margin-top: 0px;
+}
+section#services ul {
+    position: relative;
+    text-align: center;
+}
+section#services li {
+    
+    list-style-type: none;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: inline-block;
+}
+section#services li img {
+    width: 150px;
+}
+section#services li span {
+    position: relative;
+    top: 40px;
+}
+
+/* Clients */
+section#clients h1 {
+    font-size: 3em;
+    color: black;
+    margin-top: 0px;
+}
+
+/* How to find us */
+section#howToFind h1 {
+    font-size: 3em;
+    color: black;
+    margin-top: 0px;
+}
+
+/* Contact */
+section#contact h1 {
+    font-size: 3em;
+    color: black;
+    margin-top: 0px;
 }
