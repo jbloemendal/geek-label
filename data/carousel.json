@@ -1,0 +1,26 @@
+[
+    {
+        "title": "First Block",
+        "images": ["images/thumbnails/img1.jpeg", "images/thumbnails/img2.jpeg"]
+    },
+    {
+        "title": "Second Block",
+        "images": ["images/thumbnails/img3.jpeg", "images/thumbnails/img4.jpeg"]
+    },
+    {
+        "title": "Third Block",
+        "images": ["images/thumbnails/img5.jpeg", "images/thumbnails/img6.jpeg"]
+    },
+    {
+        "title": "Fourth Block",
+        "images": ["images/thumbnails/img7.jpeg", "images/thumbnails/img8.png"]
+    },
+    {
+        "title": "Fith Block",
+        "images": ["images/thumbnails/img9.jpeg", "images/thumbnails/img10.jpeg"]
+    },
+    {
+        "title": "Sixed Block",
+        "images": ["images/thumbnails/img11.jpeg", "images/thumbnails/img12.jpeg"]
+    }
+]

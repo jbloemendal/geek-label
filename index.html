@@ -14,9 +14,13 @@
     <!-- Custom CSS -->
     <link  rel="stylesheet" href="css/scrolling-nav.css">
     
+    <!-- Carousel -->
+    <link rel="stylesheet" href="css/carousel.css">
+    
     <!-- Fonts -->
     <link rel="stylesheet" href="css/fonts/ElegantIcons/eleganticons.css" />
     <link rel="stylesheet" href="css/fonts/MargotFF/margot.css" />
+    
     <script src="https://use.fontawesome.com/ed2c261463.js"></script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -38,7 +42,7 @@
         <div class="container">
             <div class="row">
                 <div>
-                    <img src="imgs/geek-label-logo.png" alt="Geek Label Logo" />
+                    <img src="images/geek-label-logo.png" alt="Geek Label Logo" />
                     <p>A team of self confessed geeks who are all about<br /> great digital design</p>
                 </div>
             </div>
@@ -53,7 +57,7 @@
         <div class="container">
             <div class="row">
                 <div>
-                    <img src="imgs/love-design.png" alt="Love Design" />
+                    <img src="images/love-design.png" alt="Love Design" />
                     <p>Some agencies love design, but don't know how to build</p>  
                 </div>
             </div>
@@ -68,7 +72,7 @@
         <div class="container">
             <div class="row">
                 <div>
-                    <img src="imgs/do-design.png" alt="Do Design" />
+                    <img src="images/do-design.png" alt="Do Design" />
                     <p>Some agencies know how to build but can't do design</p>
                 </div>
             </div>
@@ -83,7 +87,7 @@
         <div class="container">
             <div class="row">
                 <div>
-                    <img src="imgs/weLoveBoth.png" alt="We Love Both" />
+                    <img src="images/weLoveBoth.png" alt="We Love Both" />
                     <p>We love both</p>
                 </div>
             </div>
@@ -101,19 +105,19 @@
                     <h1>Services</h1>
                      <ul>
                         <li>
-                            <img src="imgs/services-web-development.png" alt="Web Development"/><br />
+                            <img src="images/services-web-development.png" alt="Web Development"/><br />
                             <span>Web Development</span>
                         </li>
                         <li>
-                            <img src="imgs/services-design.png" alt="Design" /><br />
+                            <img src="images/services-design.png" alt="Design" /><br />
                             <span>Design</span>
                         </li>
                         <li>
-                            <img src="imgs/services-branding.png" alt="Branding" /><br />
+                            <img src="images/services-branding.png" alt="Branding" /><br />
                             <span>Branding</span>
                         </li>
                         <li>
-                            <img src="imgs/services-ux-research.png" alt="UX Research" /><br />
+                            <img src="images/services-ux-research.png" alt="UX Research" /><br />
                             <span>UX Research</span>
                         </li>
                       </ul>
@@ -130,6 +134,25 @@
         <div class="container">
             <div class="row">
                 <h1>Clients</h1>
+                <section id="carouselApp">
+                    <section id="main"></section>	
+                </section>
+
+                <script type="text/html" id="template-carouselItemView">
+
+                    <img src="<%- randomImage %>" />
+                    <label><%- title %></label>
+
+                </script>
+
+                <script type="text/html" id="template-carouselListView">
+                    <div id="carousel">
+                        <a id="rotateLeft" href="#rotateLeft">&lt;</a>
+                        <ul></ul>
+                        <a id="rotateRight" href="#rotateRight">&gt;</a>
+                    </div>
+                </script>
+
             </div>
         </div>
     </section>
@@ -168,14 +191,19 @@
         </div>
     </section>
     
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
-
     <!-- Scrolling Nav JavaScript -->
+    <script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/scrolling-nav.js"></script>
     
-      
+    <!-- vendor libraries -->
+    <script src="node_modules/underscore/underscore.js"></script>
+    <script src="node_modules/backbone/backbone.js"></script>
+    <script src="node_modules/backbone.radio/build/backbone.radio.js"></script>
+    <script src="node_modules/backbone.marionette/lib/backbone.marionette.js"></script>
+
+    <!-- carousel -->
+    <script src="js/marionette-carousel.min.js"></script>  
 </body>
 
 </html>
